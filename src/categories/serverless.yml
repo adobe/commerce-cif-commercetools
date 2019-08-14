@@ -15,6 +15,7 @@ provider:
 custom:
   npm-version: ${file(package.json):name}@${file(package.json):version}
   ow-package: ${opt:ow-package, self:custom.npm-version}
+  concurrency: 200
 
 plugins:
   - serverless-openwhisk
@@ -27,7 +28,9 @@ functions:
   getCategoriesService:
     name: ${self:custom.ow-package}/getCategoriesService
     handler: getCategories.main
+    concurrency: ${self:custom.concurrency}
 
   getCategoryBySlugService:
     name: ${self:custom.ow-package}/getCategoryBySlugService
     handler: getCategoryBySlug.main
+    concurrency: ${self:custom.concurrency}

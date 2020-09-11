@@ -1,9 +1,0 @@
-{
-    "commerce-cif-commercetools-cart": "src/carts",
-    "commerce-cif-commercetools-category": "src/categories",
-    "commerce-cif-commercetools-common": "src/common",
-    "commerce-cif-commercetools-customer": "src/customers",
-    "commerce-cif-commercetools-order": "src/orders",
-    "commerce-cif-commercetools-product": "src/products",
-    "commerce-cif-commercetools-healthcheck":"src/healthchecks"
-}
